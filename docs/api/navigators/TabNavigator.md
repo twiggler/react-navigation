@@ -61,6 +61,8 @@ const MyApp = TabNavigator({
     screen: MyNotificationsScreen,
   },
 }, {
+  tabBarPosition: 'top',
+  animationEnabled: true,
   tabBarOptions: {
     activeTintColor: '#e91e63',
   },
@@ -104,6 +106,7 @@ Several options get passed to the underlying router to modify navigation logic:
 - `showLabel` - whether to show label for tab, default is true
 - `style` - style object for the tab bar
 - `labelStyle` - style object for the tab label
+- `tabStyle` - style object for the tab
 
 Example:
 
@@ -141,6 +144,9 @@ Example:
 tabBarOptions: {
   labelStyle: {
     fontSize: 12,
+  },
+  tabStyle: {
+    width: 100,    
   },
   style: {
     backgroundColor: 'blue',
